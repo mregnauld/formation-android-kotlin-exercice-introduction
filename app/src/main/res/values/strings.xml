@@ -1,0 +1,11 @@
+<resources>
+
+	<!-- Commun -->
+	<string name="app_name">Introduction</string>
+
+	<!-- Main -->
+	<string name="main_calculer">Calculer</string>
+	<string name="main_commande_invalide">Commande invalide</string>
+	<string name="main_resultat">Résultat : %1$d</string>
+
+</resources>
