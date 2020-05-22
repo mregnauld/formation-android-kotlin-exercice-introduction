@@ -44,33 +44,29 @@ class MainActivity : AppCompatActivity()
 				"somme" ->
 				{
 					total = 0
-					for (a in 1 until elements.size)
-					{
-						total += elements[a].toInt()
+					elements.takeLast(elements.size - 1).forEach {
+						total += it.toInt()
 					}
 				}
 				"diff" ->
 				{
 					total = elements[1].toInt()
-					for (a in 2 until elements.size)
-					{
-						total -= elements[a].toInt()
+					elements.takeLast(elements.size - 2).forEach {
+						total -= it.toInt()
 					}
 				}
 				"mult" ->
 				{
 					total = 1
-					for (a in 1 until elements.size)
-					{
-						total *= elements[a].toInt()
+					elements.takeLast(elements.size - 1).forEach {
+						total *= it.toInt()
 					}
 				}
 				"div" ->
 				{
 					total = elements[1].toInt()
-					for (a in 2 until elements.size)
-					{
-						total /= elements[a].toInt()
+					elements.takeLast(elements.size - 2).forEach {
+						total /= it.toInt()
 					}
 				}
 				else ->
